@@ -1,0 +1,174 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 29 Mar, 2022, 10:58:43 AM
+    Author     : Kirti Vijay
+*/
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap');
+@font-face {
+    font-family: 'Avenir-Light';
+    src: url('../fonts/avenir-light-webfont.woff2') format('woff2'),
+         url('../fonts/avenir-light-webfont.woff') format('woff');    
+    font-weight: normal;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'Avenir-Light';
+    src: url('../fonts/Avenir-Heavy.woff') format('woff');    
+    font-weight: 900;
+    font-style: normal;
+  }
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Avenir-Light";
+    box-sizing: border-box;
+}
+.w-80{
+    width:80px;
+}
+.card-blue{
+    border-color: #306EBA !important;
+}
+.bg-blue{
+    background-color: #306EBA !important;   
+    border-color: #306EBA !important;   
+}
+.text-blue{
+    color: #306EBA !important;
+}
+.page-link, .nav-pills .users .nav-link:not(.active):hover{
+    color: #306EBA !important;
+}
+.paginate_button.page-item.active a, .page-item.active .page-link{
+    background-color: #306EBA !important;
+    border-color: #306EBA !important;
+    color: white !important;
+}
+table.dataTable.dtr-inline.collapsed>tbody>tr>td.dtr-control:before, table.dataTable.dtr-inline.collapsed>tbody>tr>th.dtr-control:before{
+    background-color: #306EBA !important;
+}
+.sidebar-dark-warning .nav-sidebar>.nav-item>.nav-link.active, .sidebar-light-primary .nav-sidebar>.nav-item>.nav-link.active{
+    background-color: #306EBA !important;
+    color: white !important;
+}
+.select2-container--default .select2-selection--multiple .select2-selection__choice{
+    background-color: #306EBA !important;
+    border-color: #306EBA !important;
+    color: white !important;
+}
+.card-blue:not(.card-outline)>.card-header{
+    background-color: #306EBA !important;
+    border-color: #306EBA !important;
+}
+.btn-blue{
+    background-color: #306EBA !important;
+    border-color: #306EBA !important;
+}
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link{
+    background-color: #306EBA !important;
+}
+.nav-pills .users .nav-link{
+    border:1px solid !important;
+}
+
+.content-wrapper>.content .dataTables_wrapper  .dataTable .sorting{
+    font-size: .9rem;
+    padding: 0.45rem 0.45rem;
+    padding-right: 20px;
+    padding-right: 15px;
+}
+.content-wrapper>.content .dataTables_wrapper .dataTable td{
+    font-size: .9rem;
+    padding: 0.45rem 0.45rem;
+}
+.content-wrapper>.content .dataTables_wrapper .dataTable td.large-content{
+    width: 180px;
+}
+.content-wrapper>.content .dataTables_wrapper .dataTable td .form-control{
+    height: 20px;
+    font-size: .7rem;
+}
+/* select.change-status{
+    color:yellow;
+} */
+.pending{
+    color:orange;
+}
+.responded{
+    color:green;
+}
+.resolved{
+    color:blue;
+}
+.archive{
+    color:red;
+}
+.form-control{
+    height: calc(2.25rem + 6px);
+}
+.coupon-code .coupon-code-area h2{
+    font-size: 52px;
+    font-family: "Avenir-Light";
+    font-weight: 900;
+    text-transform: uppercase;
+  }
+  .coupon-code .coupon-code-area ul.offer-list{
+    padding-left:18px;
+    margin-bottom: 0;
+  }
+  .coupon-code .coupon-code-area ul.offer-list li{
+    list-style: disc;
+    font-size: 18px;
+  }
+  .coupon-code .coupon-code-area ul li:not(:first-child){
+    margin-top: 5px;
+  }
+  .coupon-code .coupon-code-area .copy-code{
+    width:300px;
+    display: flex;
+    border: 1px solid #306eba;
+  }
+  .coupon-code .coupon-code-area .copy-code input{
+    width:50%;
+    border: none;
+    outline: none;
+    background-color: #306eba;
+    color: #fff;
+  }
+  .coupon-code .coupon-code-area .copy-code input:focus{
+    color:#fff !important;
+  }
+  .coupon-code .coupon-code-area .copy-code span{
+    display: inline-block;
+    width:50%;
+    color: #306eba;
+    cursor: pointer;
+  }
+  .coupon-code .coupon-code-area .copy-code input,
+  .coupon-code .coupon-code-area .copy-code span{
+    padding: 5px 0;
+    text-align: center;
+  }
+  .box-dash {
+    height: 100%;
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.06);
+}
+@media (min-width: 768px){
+    body:not(.sidebar-mini-md):not(.sidebar-mini-xs):not(.layout-top-nav) .content-wrapper, body:not(.sidebar-mini-md):not(.sidebar-mini-xs):not(.layout-top-nav) .main-footer, body:not(.sidebar-mini-md):not(.sidebar-mini-xs):not(.layout-top-nav) .main-header {
+        transition: margin-left .3s ease-in-out;
+        margin-left: 280px;
+    }
+}
+
+

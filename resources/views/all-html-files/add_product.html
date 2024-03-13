@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Classroom Copy | Add Product</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/favicon.jpg" type="image/jpg">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/media.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css">
+
+</head>
+
+<body>
+    <!--Header Starts Here-->
+    <header>
+        <nav class="py-1 top-bar border-bottom ">
+            <div class="container navbar navbar-expand-lg py-0 d-flex flex-wrap">
+                <a href="index.html" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none "><img src="images/logo.png" class="img-fluid mr-3 logo" alt="Classroom-logo"></a>
+                <button class="navbar-toggler mytoggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample09" aria-controls="navbarsExample09" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon mytoggler-icon"></span>
+        </button>
+                <div class="collapse navbar-collapse fade" id="navbarsExample09">
+                    <ul class="nav top-links ms-auto">
+                        <li class="nav-item"><a href="#" class="nav-link link-light border-start px-3"><i
+                  class="fal fa-heart px-2"></i> Wishlist</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link border-start link-light px-3"><i
+                  class="fal fa-shopping-cart px-2  position-relative"> <span
+                    class="cart-item position-absolute top-25 left-0 translate-middle bg-danger border border-light rounded-circle">1</span></i>
+                My Cart</a>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link text-white dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <img src="images/profile-pic.jpg" class="img-fluid rounded-circle  me-1" alt="profile-pic">
+                                <i class='fal fa-chevron-down'></i>
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-light mt-0 pb-5 pt-0 ">
+                                <li class="py-2 mb-3"><a class="dropdown-item blue" href="#"><i
+                                    class="fal fa-user px-2"></i> Account</a>
+                                </li>
+                                <li><a class="dropdown-item" href="#"><i
+                                    class="fal fa-chevron-right px-2"></i> Account Dashboard</a></li>
+                                <li><a class="dropdown-item" href="#"><i
+                                    class="fal fa-chevron-right px-2"></i> Store Dashboard</a></li>
+
+                                <li class="nav-item login"><a href="#" class="nav-link bg-blue text-white px-3 btn btn-lg text-uppercase py-2 mx-4 mt-3 fw-bold login-btn">Log out</a></li>
+
+                            </ul>
+                        </li>
+
+
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+        <div class="container-fluid py-3 mb-3 border-bottom">
+            <div class="container middle-search-section pb-2">
+                <div class="row">
+                    <div class="col-12 col-sm-12 col-md-7">
+                        <ul class="d-flex flex-row justify-content-end menu-links mb-2 mb-lg-0 ">
+                            <li class="nav-item"><a href="#" class="nav-link">Become a Seller </a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">Gift Cards</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">Help</a></li>
+                        </ul>
+
+
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-5">
+
+                        <form>
+                            <div class="search"> <input type="text" class="form-control" placeholder="Search"> <button class="btn-hover"> <i class="fa fa-search"></i></button> </div>
+                        </form>
+
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+        <div class="container-fluid pb-3 d-flex flex-wrap justify-content-center border-bottom">
+            <div class="container  bottom-select-section">
+                <form class="row g-3 align-items-center">
+                    <div class="col-12 col-sm-6 col-md-6  w-200">
+                        <select class="form-select" id="inlineFormSelectPref">
+              <option selected>Language</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+            </select>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-6 w-200">
+                        <select class="form-select" id="inlineFormSelectPref">
+              <option selected>Grade</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+            </select>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-6 w-200">
+                        <select class="form-select" id="inlineFormSelectPref">
+              <option selected>Subject</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+            </select>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-6 w-200">
+                        <select class="form-select" id="inlineFormSelectPref">
+              <option selected>Price</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+            </select>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-6 w-200">
+                        <select class="form-select" id="inlineFormSelectPref">
+              <option selected>Type</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+            </select>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-6 w-200">
+                        <select class="form-select" id="inlineFormSelectPref">
+              <option selected>Format</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+            </select>
+                    </div>
+
+                    <div class="col-auto search-btn">
+                        <button type="submit" class="btn text-uppercase btn-hover">Search</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </header>
+
+    <div class="b-example-divider"></div>
+    <!--Header Section Ends Here-->
+
+
+    <!--Breadcrub Section Starts Here-->
+    <section class="breadcrumb-section bg-light-blue pt-2">
+        <div class="container py-2">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item active"><a href="index.html"><i class='fal fa-home-alt'></i> Home Store Dashboard</a></li>
+                    <li class="breadcrumb-item" aria-current="page">My Product</li>
+                    <li class="breadcrumb-item" aria-current="page">Product Dashboard</li>
+                    <li class="breadcrumb-item" aria-current="page">Add Products</li>
+                </ol>
+            </nav>
+        </div>
+
+    </section>
+    <!--Breadcrub Section Ends Here-->
+
+    <!--Add Product Starts Here-->
+    <section class="add_product_section">
+        <div class="container">
+            <h1 class="text-uppercase pt-5">
+                Add Products To Your Store
+            </h1>
+            <!--Form Section Starts Here-->
+            <form class="row g-3 pt-2 pb-5 col-md-12 d-flex flex-row">
+                <h1 class="text-uppercase pb-3">
+                    Add Products
+                </h1>
+                <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+                    <label for="inputProduct" class="form-label w-25 fw-bold d-flex flex-column float-start mb-0">Product Type
+                         <a href="#" class="text-muted fs-6 fw-normal mb-0" data-bs-toggle="modal" data-bs-target="#exampleModalCenter">Supported File Types</a></label>
+                    <select id="inputProduct" class="form-select bg-light w-50">
+                        <option selected></option>
+                        <option></option>
+                      </select>
+                </div>
+
+
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModalCenter">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="staticBackdropLabel">Supported File Types</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <h5>Product File <span class="fs-6 text-muted">Up to 200 MB</span></h5>
+                                <p>.doc, .docx, .xls, .xlsx, .ppt, .pptx,.txt, .rtf, .ps, .eps, .prn, .bmp, .jpeg, .gif, .tiff, .png, .pcx, .rle, .dib,.html, .wpd, .odt, .odp, .ods, .odg, .odf, .sxw, .sxi, .sxc, .sxd, .stw, .psd, .ai, .indd, .u3d, .prc,
+                                    .dwg, .dwt, .dxf, .dwf, .dst, .xps, .mpp,.vsd
+                                </p>
+                                <h5>Preview <span class="fs-6 text-muted">Up to 15 MB</span></h5>
+                                <p>.pdf, .bmp, .gif, .jpg, .jpeg, .png, .ttf, .txt</p>
+                                <h5>Video Preview <span class="fs-6 text-muted">Up to 500 MB</span></h5>
+                                <p>.mp4, .mov, .wmv, .avi, .avchd, .flv, .f4V, .swf, .mkv, .mpeg-2</p>
+                                <h5>Thumbnails <span class="fs-6 text-muted">Up to 2 MB</span></h5>
+                                <p>.bmp, .gif, .jpg, .jpeg, .png, .ttf, .txt</p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-success" data-bs-dismiss="modal">Done</button>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+
+
+                <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+                    <label for="inputProduct-title" class="form-label w-25 fw-bold float-start">Product Title</label>
+                    <input type="text" class="form-control bg-light w-50" id="inputProduct-title" placeholder="Name your product">
+                </div>
+                <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+                    <label for="textareaDescription" class="form-label w-25 fw-bold float-start">Description</label>
+                    <textarea class="form-control bg-light  w-50" id="textareaDescription" rows="3" placeholder="Describe your product and its benefits for other educators."></textarea>
+                </div>
+                <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+                    <label for="selectLevel" class="form-label w-25  fw-bold float-start">Year Level</label>
+                    <select id="inputLevel" class="form-select bg-light  w-50" placeholder="Select Up to Four Year Levels or ‘ Non-Specific Grade’  ">
+                        <option selected>Select Up to Four Year Levels or ‘ Non-Specific Grade’  </option>
+                        <option></option>
+                      </select>
+                </div>
+                <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+                    <label for="selectSubject" class="form-label w-25 fw-bold float-start">Subject Area</label>
+                    <select id="selectSubject" class="form-select bg-light  w-50" placeholder="Select at least one subject area">
+                        <option selected>Select at least one subject area
+                        </option>
+                        <option></option>
+                      </select>
+                </div>
+                <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+                    <label for="selectCategory" class="form-label w-25 fw-bold float-start">Custom Category</label>
+                    <select id="selectCategory" class="form-select bg-light  w-50" placeholder="TBA">
+                        <option selected>TBA</option>
+                        <option></option>
+                      </select>
+                </div>
+                <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+                    <label for="selectStandards" class="form-label w-25 fw-bold float-start">Standards / Outcomes</label>
+                    <select id="selectStandards " class="form-select country bg-light w-25 me-2 float-start" placeholder="Select Country ">
+                        <option selected> Select Country </option>
+                        <option></option>
+                      </select>
+                    <input type="text " class="form-control bg-light w-25  pe-0 float-start" id="inputList-standards " placeholder="List standards / outcome codes separated by a comma ">
+                </div>
+
+                <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+                    <label for="selectTeachingDuration" class="form-label w-25 fw-bold float-start">Teaching Duration:</label>
+                    <select id="selectTeachingDuration" class="form-select bg-light w-50 " placeholder="Select Country ">
+                        <option selected> N/A</option>
+                        <option></option>
+                      </select>
+                </div>
+                <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+                    <label for="selectPages " class="form-label w-25 fw-bold float-start">No. of Pages /Slides:</label>
+                    <select id="selectPages " class="form-select bg-light w-25 no-of-pages" placeholder="Total Pages or Slides ">
+                        <option selected> Total Pages or Slides  </option>
+                        <option></option>
+                      </select>
+
+                </div>
+                <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+                    <label for="selectAnswerkey " class="form-label w-25 fw-bold float-start">Answer Key:</label>
+                    <select id="selectAnswerkey " class="form-select bg-light pages-or-slides w-25" placeholder="Total Pages or Slides ">
+                        <option selected> Total Pages or Slides  </option>
+                        <option></option>
+                      </select>
+                </div>
+
+                <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+                    <label for="pricing " class="form-label w-25 float-start"><h1 class="text-uppercase">Pricing:</h1></label>
+                    <label class="form-label view-pricing w-25 pt-2 float-start"><a href="#" class="text-upperxase text-dark ">View Pricing Guide</a></label>
+                </div>
+
+
+                <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+                    <label for="License " class="form-label w-25 fw-bold float-start">License:</label>
+
+                    <div class=" form-check-inline ps-0">
+                        <input type="radio" name="flexRadioDefault" value="paid" onclick="show1();" />
+                        <label class="form-check-label" for="flexRadioDefault">Paid</label>
+                    </div>
+                    <div class=" form-check-inline ps-0">
+                        <input type="radio" name="flexRadioDefault" value="free" onclick="show2();" />
+                        <label class="form-check-label " for="flexRadioDefault1">
+                          Free
+                        </label>
+                    </div>
+                    <div class="row mx-auto">
+                        <div id="div1" class="hidden p-0">
+
+                            <label for="inputLicense " class="col-md-2 form-label pt-2  fw-bold float-start">Single License:</label>
+                            <div class="col-12 col-sm-12 col-md-4 col-lg-4 float-start">
+                                <input type="text" class="form-control bg-light " id="inputLicense " placeholder="USD $ ">
+                            </div>
+                            <label for="multipleLicense " class="col-md-2 form-label pt-2 fw-bold float-start text-center multiple-license">Multiple License:</label>
+                            <div class="col-12 col-sm-12 col-md-4 col-lg-4 float-start">
+                                <input type="text " class="form-control license bg-light  " id="multipleLicense " placeholder="USD $ ">
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+                <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+                    <label for="inputTaxcode " class="form-label w-25 fw-bold float-start">Tax Code:</label>
+                    <input type="text " class="form-control bg-light w-75" id="inputTaxcode " placeholder="TBA ">
+                </div>
+
+
+                <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+                    <label for="upload-files " class="form-label  float-start"><h1 class="text-uppercase">Upload Files:</h1></label>
+
+
+                </div>
+
+                <div class="col-12 col-sm-12 col-md-2 col-lg-2">
+                    <p class="text-muted text-wrap">Select File:<br> Up to 200 MB</p>
+                </div>
+                <div class="col-12 col-sm-12 col-md-2 col-lg-2">
+                    <input class="custom-file-input text-uppercase" type="file" id="formFile">
+
+
+                </div>
+                <div class="col-12 col-sm-12 col-md-1 col-lg-1 text-center">
+                    <div class="fw-bold or"> or </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-7 col-lg-7">
+                    <p class="blue fw-bold text-center drag-drop-box p-2">Drag and Drop Here</p>
+                </div>
+
+
+                <div class="col-12 col-sm-12 col-md-2 col-lg-2">
+                    <label for="thumbnails" class="form-label fw-bold">Thumbnails:</label>
+                </div>
+                <div class="col-12 col-sm-12 col-md-9 col-lg-9 radio-buttons">
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                        <label class="form-check-label" for="flexRadioDefault1">
+                            Auto generate thumbnails
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                        <label class="form-check-label" for="flexRadioDefault2">
+                            Upload my own thumbnails
+                        </label>
+                    </div>
+                </div>
+
+
+                <div class="container py-4">
+                    <div class="row gx-3 gx-sm-4" ">
+                        <div class="col-6 col-sm-12 col-md-3 col-lg-3 text-center mb-2 ">
+                            <div class="card drag-drop-box h-100 px-2 py-2 ">
+                                <div class="card-body "><p class="blue fw-bold ">Main Image</p>
+                                    <p class="text-muted text-wrap ">Select file <br>or drag and drop <br>Up to 2 MB</p>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="col-6 col-sm-12 col-md-3 col-lg-3 text-center mb-2 ">
+                            <div class="card drag-drop-box h-100 px-2 py-2 ">
+                                <div class="card-body "><p class="blue fw-bold ">Image (Optional)</p>
+                                    <p class="text-muted text-wrap ">Select file <br>or drag and drop <br>Up to 2 MB</p>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="col-6 col-sm-12 col-md-3 col-lg-3 text-center mb-2 ">
+                            <div class="card drag-drop-box h-100 px-2 py-2 ">
+                                <div class="card-body "><p class="blue fw-bold ">Image (Optional)</p>
+                                    <p class="text-muted text-wrap ">Select file <br>or drag and drop <br>Up to 2 MB</p>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="col-6 col-sm-12 col-md-3 col-lg-3 text-center mb-2 ">
+                            <div class="card drag-drop-box h-100 px-2 py-2 ">
+                                <div class="card-body "><p class="blue fw-bold ">Image (Optional)</p>
+                                    <p class="text-muted text-wrap ">Select file <br>or drag and drop <br>Up to 2 MB</p>
+                                </div>
+                            </div>
+                            
+                        </div>
+                   
+                    </div>
+                   </div>
+                   <div class="col-12 col-sm-12 col-md-12 col-lg-12 ">
+                    <label for="upload-files " class="form-label "><h1 class="text-uppercase ">Upload Files:</h1></label>
+                </div>
+                
+                <div class="col-12 col-sm-12 col-md-12 col-lg-12 ">
+                <div class="mb-3 form-check">
+                            <input class="form-check-input my-2" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label pt-1" for="flexCheckDefault">
+                               By uploading the above product, I attest that I have read and agree to the Classroom Copy Terms 
+                            and Conditions and Intellectual Property Policy and that the product does not infringe the 
+                            copyrights, trademark rights, or any other rights of any third party.
+
+                            </label>
+                     </div>
+                                  
+
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-12 text-center">
+                        <button type="submit " class="btn bg-blue btn-hover text-white text-uppercase my-5 ">Submit</button>
+                    </div>
+
+
+            </form>
+            <!--Form Section Ends Here-->
+            </div>
+    </section>
+
+    <!--Add Product Starts Here-->
+
+
+
+    <!--Footer Section Starts Here-->
+
+    <section class="footer-section border-top ">
+        <div class="container ">
+            <footer class="row row-cols-5 py-5 my-5 ">
+                <div class="col-12 col-sm-12 col-md-4 pb-3 ">
+                    <a href="index.html " class="d-flex align-items-center ">
+                        <img src="images/footer-logo.png " class="img-fluid mr-3 " alt="Classroom-footer-logo ">
+                    </a>
+                </div>
+
+
+
+                <div class="col-12 col-sm-12 col-md-2 pb-3 ">
+                    <h5 class="border-start ps-4 ">About Us</h5>
+                    <ul class="nav flex-column footer-links ms-4 mt-3 ">
+                        <li class="nav-item mb-2 "><a href="# " class="nav-link p-0 text-dark ">Who We Are</a></li>
+                        <li class="nav-item mb-2 "><a href="# " class="nav-link p-0 text-dark ">Blog</a></li>
+
+                    </ul>
+                </div>
+
+                <div class="col-12 col-sm-12 col-md-3 pb-3 ">
+                    <h5 class="border-start ps-4 ">Support</h5>
+                    <ul class="nav flex-column footer-links ms-4 mt-3 ">
+                        <li class="nav-item mb-2 "><a href="# " class="nav-link p-0 text-dark ">Help and FAQ</a></li>
+                        <li class="nav-item mb-2 "><a href="# " class="nav-link p-0 text-dark ">Documents and Policies</a></li>
+                        <li class="nav-item mb-2 "><a href="# " class="nav-link p-0 text-dark ">Forms</a></li>
+                        <li class="nav-item mb-2 "><a href="# " class="nav-link p-0 text-dark ">Contact Us</a></li>
+
+                    </ul>
+                </div>
+
+                <div class="col-12 col-sm-12 col-md-3 ">
+                    <h5 class="border-start ps-4 ">Keep in Touch</h5>
+                    <ul class="nav flex-column mt-3 ">
+                        <li class="nav-item mb-2 ">
+                            <p>Sign up to get free resources, updates and special offers.</p>
+                        </li>
+                        <li class="nav-item mb-2 "><a href="# " class="nav-link p-0 text-dark "><button type="button "
+                  class="btn-hover btn btn-primary sign-up bg-blue btn-lg px-4 my-2 me-md-2 text-uppercase ">Sign up
+                  now</button></a>
+                        </li>
+
+                    </ul>
+                </div>
+
+            </footer>
+        </div>
+        <div class="bg-dark text-center ">
+            <p class=" text-white py-3 mb-0 ">&copy; 2022 - Classroom Copy. All rights reserved.</p>
+        </div>
+    </section>
+
+    <!--Footer Section Ends Here-->
+
+
+
+    <!-- Separate Popper and Bootstrap JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js "></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js " integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB " crossorigin="anonymous "></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js " integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13 " crossorigin="anonymous "></script>
+    <script>
+    function show1(){
+  document.getElementById('div1').style.display ='block';
+}
+function show2(){
+  document.getElementById('div1').style.display = 'none';
+}
+    </script>
+
+</body>
+
+</html>

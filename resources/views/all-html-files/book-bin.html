@@ -1,0 +1,842 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Classroom | Book Bin Products</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/favicon.jpg" type="image/jpg">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/media.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css">
+
+</head>
+
+<body>
+    <!--Header Starts Here-->
+    <header>
+        <nav class="py-1 top-bar border-bottom ">
+
+            <div class="container navbar navbar-expand-lg py-0 d-flex flex-wrap">
+                <a href="index.html" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none "><img src="images/logo.png" class="img-fluid mr-3 logo" alt="Classroom-logo"></a>
+                <button class="navbar-toggler mytoggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample09" aria-controls="navbarsExample09" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon mytoggler-icon"></span>
+        </button>
+                <div class="collapse navbar-collapse fade" id="navbarsExample09">
+                    <ul class="nav top-links ms-auto">
+                        <li class="nav-item"><a href="#" class="nav-link link-light border-start px-3"><i
+                  class="fal fa-heart px-2"></i> Wishlist</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link border-start link-light px-3"><i
+                  class="fal fa-shopping-cart px-2  position-relative"> <span
+                    class="cart-item position-absolute top-25 left-0 translate-middle bg-danger border border-light rounded-circle">1</span></i>
+                My Cart</a>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link text-white dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <img src="images/profile-pic.jpg" class="img-fluid rounded-circle  me-1" alt="profile-pic">
+                                <i class='fal fa-chevron-down'></i>
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-light mt-0 pb-5 pt-0 ">
+                                <li class="py-2 mb-3"><a class="dropdown-item blue" href="#"><i
+                                    class="fal fa-user px-2"></i> Account</a>
+                                </li>
+                                <li><a class="dropdown-item" href="#"><i
+                                    class="fal fa-chevron-right px-2"></i> Account Dashboard</a></li>
+                                <li><a class="dropdown-item" href="#"><i
+                                    class="fal fa-chevron-right px-2"></i> Store Dashboard</a></li>
+
+                                <li class="nav-item login"><a href="#" class="nav-link bg-blue text-white px-3 btn btn-lg text-uppercase py-2 mx-4 mt-3 fw-bold login-btn">Log out</a></li>
+
+                            </ul>
+                        </li>
+
+
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+        <div class="container-fluid py-3 mb-3 border-bottom">
+            <div class="container middle-search-section pb-2">
+                <div class="row">
+                    <div class="col-12 col-sm-12 col-md-7">
+                        <ul class="d-flex flex-row justify-content-end menu-links mb-2 mb-lg-0 ">
+                            <li class="nav-item"><a href="#" class="nav-link">Become a Seller </a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">Gift Cards</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">Help</a></li>
+                        </ul>
+
+
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-5">
+
+                        <form>
+                            <div class="search"> <input type="text" class="form-control" placeholder="Search"> <button class="btn-hover"> <i class="fa fa-search"></i></button> </div>
+                        </form>
+
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+        <div class="container-fluid pb-3 d-flex flex-wrap justify-content-center border-bottom">
+            <div class="container  bottom-select-section">
+                <form class="row g-3 align-items-center">
+                    <div class="col-12 col-sm-6 col-md-6  w-200">
+                        <select class="form-select" id="inlineFormSelectPref">
+              <option selected>Language</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+            </select>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-6 w-200">
+                        <select class="form-select" id="inlineFormSelectPref">
+              <option selected>Grade</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+            </select>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-6 w-200">
+                        <select class="form-select" id="inlineFormSelectPref">
+              <option selected>Subject</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+            </select>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-6 w-200">
+                        <select class="form-select" id="inlineFormSelectPref">
+              <option selected>Price</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+            </select>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-6 w-200">
+                        <select class="form-select" id="inlineFormSelectPref">
+              <option selected>Type</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+            </select>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-6 w-200">
+                        <select class="form-select" id="inlineFormSelectPref">
+              <option selected>Format</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+            </select>
+                    </div>
+
+                    <div class="col-auto search-btn">
+                        <button type="submit" class="btn text-uppercase btn-hover">Search</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </header>
+
+    <div class="b-example-divider"></div>
+    <!--Header Section Ends Here-->
+
+
+    <!--Breadcrub Section Starts Here-->
+    <section class="breadcrumb-section bg-light-blue pt-2">
+        <div class="container py-2">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html"><i class='fal fa-home-alt'></i> Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Book Bin </li>
+                    <li class="breadcrumb-item active" aria-current="page">Products </li>
+                </ol>
+            </nav>
+        </div>
+    </section>
+    <!--Breadcrub Section Ends Here-->
+<!-- page title start -->
+<section class="inner_page">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="inner_page_title">
+                    <h1>Book Bin</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="inner_page_baner">
+    <div class="inner_page_title">
+        <img src="images/inner-banner.jpg" alt="inner banner" class="img-fluid">
+    </div>
+</section>
+
+<!-- page title end  -->
+<!-- Book Bin products section start -->
+<section class="products_main">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-7 col-md-6 col-sm-12">
+                <ul class="nav nav-tabs  nav-fill" id="myTab" role="tablist">
+                    <li class="nav-item product" role="presentation">
+                      <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Products</button>
+                    </li>
+                    <li class="nav-item rating-reviews" role="presentation">
+                      <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Ratings & Reviews </button>
+                    </li>
+                    <li class="nav-item profile" role="presentation">
+                      <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false">Profile</button>
+                    </li>
+                    <li class="nav-item communication" role="presentation">
+                        <button class="nav-link" id="Communication-tab" data-bs-toggle="tab" data-bs-target="#Communication" type="button" role="tab" aria-controls="Communication" aria-selected="false">Communication</button>
+                      </li>
+                  </ul>
+                 
+            </div>
+            <div class="col-lg-5 col-md-6 col-sm-12">
+                <div class="right-sorting">
+                    <div class="row align-items-center">
+                        <div class="col-md-4 my-md-0 my-3">
+                            <div class="d-flex align-items-center justify-content-between">
+                                <div class="label-view">
+                                    <h6>
+                                        VIEW
+                                    </h6>
+                                </div>
+                                <div class="icon-grid">
+                                    <a href="#" class="active me-2"><i class="fas fa-th-large"></i></a>
+                                    <a href="#"><i class="fal fa-align-left"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-8">
+                            <div class="d-flex align-items-center justify-content-between">
+                                <div class="label-view">
+                                    <h6>
+                                        Sort by
+                                    </h6>
+                                </div>
+                                <div class="sort" id="product-sort">
+                                    <select class="form-select">
+                                        <option value="">Best Sellers</option>
+                                        <option value="">Rating</option>
+                                        <option value="">Price</option>
+                                        <option value="">Most Recent</option>
+                                    </select>
+                                </div>
+                                   <div class="sort" id="rate-review-sorting" style="display:none;">
+                                        <select class="form-select">
+                                            <option value="">Date</option>
+                                            <option value="">Rating</option>
+                                           
+                                        </select>
+                                    </div>
+                         
+                          
+                                 
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-5">
+            <div class="col-12">
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                        <h3 class="tab-title mb-4 mb-md-5">Products</h3>
+                        <div class="row">
+                            <div class="col-lg-3 col-md-4 col-sm-12">
+                                <div class="products_list">
+                                    <div class="box position-relative"><img src="images/Book-1.jpg" class="img-fluid" alt="Book-1">
+                                        <ul class="icon-list d-flex flex-row list-unstyled align-items-center justify-content-center bottom-0 start-50 end-50 position-absolute">
+                                            <li class="mx-2"><a href="#"><i class="fal fa-heart bg-white rounded-circle p-2"></i></a></li>
+                                            <li class="mx-2"><a href="#"><i class="fal fa-shopping-cart bg-white rounded-circle p-2"></i></a></li>
+                                            <li class="mx-2"><a href="#"><i class="fal fa-search bg-white rounded-circle p-2"></i></a></li>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <p class="pt-4 fw-bold mb-0">Sample Distance Learning Education Goals</p>
+                                    <span class="d-inline-block price py-2 px-0">$ 8.50</span>
+                                    <span class="price-line-through p-0">$ 11.90</span>
+                                    <ul class="rating d-flex flex-row justify-content-start ps-0 ">
+                                        <li><a href="#"><i class='fas fa-star'></i></a></li>
+                                        <li><a href="#"><i class='fas fa-star'></i></a></li>
+                                        <li><a href="#"><i class='fas fa-star'></i></a></li>
+                                        <li><a href="#"><i class='fas fa-star'></i></a></li>
+                                        <li><a href="#"><i class='fal fa-star'></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-sm-12">
+                                <div class="products_list">
+                                    <div class="box  position-relative">
+                                        <span class="sale position-absolute top-0 left-100 translate-middle badge btn btn-danger bg-danger">SALE</span>
+                                        <img src="images/Book-2.jpg" class="img-fluid" alt="Book-2">
+                                        <ul class="icon-list d-flex flex-row list-unstyled align-items-center justify-content-center bottom-0 start-50 end-50 position-absolute">
+                                            <li class="mx-2"><a href="#"><i class="fal fa-heart bg-white rounded-circle p-2"></i></a></li>
+                                            <li class="mx-2"><a href="#"><i class="fal fa-shopping-cart bg-white rounded-circle p-2"></i></a></li>
+                                            <li class="mx-2"><a href="#"><i class="fal fa-search bg-white rounded-circle p-2"></i></a></li>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <p class="pt-4 fw-bold mb-0">Sample Distance Learning Education Goals</p>
+                                    <span class="d-inline-block price py-2 px-0">$ 8.50</span>
+                                    <span class="price-line-through p-0">$ 11.90</span>
+                                    <ul class="rating d-flex flex-row justify-content-start ps-0 ">
+                                        <li><a href="#"><i class='fas fa-star'></i></a></li>
+                                        <li><a href="#"><i class='fas fa-star'></i></a></li>
+                                        <li><a href="#"><i class='fas fa-star'></i></a></li>
+                                        <li><a href="#"><i class='fas fa-star'></i></a></li>
+                                        <li><a href="#"><i class='fal fa-star'></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-sm-12">
+                                <div class="products_list">
+                                    <div class="box position-relative"><img src="images/Book-3.jpg" class="img-fluid" alt="Book-3">
+                                        <ul class="icon-list d-flex flex-row list-unstyled align-items-center justify-content-center bottom-0 start-50 end-50 position-absolute">
+                                            <li class="mx-2"><a href="#"><i class="fal fa-heart bg-white rounded-circle p-2"></i></a></li>
+                                            <li class="mx-2"><a href="#"><i class="fal fa-shopping-cart bg-white rounded-circle p-2"></i></a></li>
+                                            <li class="mx-2"><a href="#"><i class="fal fa-search bg-white rounded-circle p-2"></i></a></li>
+                                            </li>
+                                        </ul>
+                
+                                    </div>
+                                    <p class="pt-4 fw-bold mb-0">Sample Distance Learning Education Goals</p>
+                                    <span class="d-inline-block price py-2 px-0">$ 8.50</span>
+                                    <span class="price-line-through p-0">$ 11.90</span>
+                                    <ul class="rating d-flex flex-row justify-content-start ps-0 ">
+                                        <li><a href="#"><i class='fas fa-star'></i></a></li>
+                                        <li><a href="#"><i class='fas fa-star'></i></a></li>
+                                        <li><a href="#"><i class='fas fa-star'></i></a></li>
+                                        <li><a href="#"><i class='fas fa-star'></i></a></li>
+                                        <li><a href="#"><i class='fal fa-star'></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-sm-12">
+                                <div class="products_list">
+                                    <div class="box  position-relative">
+                                        <span class="sale position-absolute top-0 left-100 translate-middle badge btn btn-danger bg-danger">SALE</span>
+                                        <img src="images/Book-4.jpg" class="img-fluid" alt="Book-4">
+                                        <ul class="icon-list d-flex flex-row list-unstyled align-items-center justify-content-center bottom-0 start-50 end-50 position-absolute">
+                                            <li class="mx-2"><a href="#"><i class="fal fa-heart bg-white rounded-circle p-2"></i></a></li>
+                                            <li class="mx-2"><a href="#"><i class="fal fa-shopping-cart bg-white rounded-circle p-2"></i></a></li>
+                                            <li class="mx-2"><a href="#"><i class="fal fa-search bg-white rounded-circle p-2"></i></a></li>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <p class="pt-4 fw-bold mb-0">Sample Distance Learning Education Goals</p>
+                                    <span class="d-inline-block price py-2 px-0">$ 8.50</span>
+                                    <span class="price-line-through p-0">$ 11.90</span>
+                                    <ul class="rating d-flex flex-row justify-content-start ps-0 ">
+                                        <li><a href="#"><i class='fas fa-star'></i></a></li>
+                                        <li><a href="#"><i class='fas fa-star'></i></a></li>
+                                        <li><a href="#"><i class='fas fa-star'></i></a></li>
+                                        <li><a href="#"><i class='fas fa-star'></i></a></li>
+                                        <li><a href="#"><i class='fal fa-star'></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-sm-12">
+                                <div class="products_list">
+                                    <div class="box  position-relative"><span class="sale position-absolute top-0 left-100 translate-middle badge btn btn-danger bg-danger">SALE</span>
+                                        <img src="images/Book-5.jpg" class="img-fluid" alt="Book-5">
+                                        <ul class="icon-list d-flex flex-row list-unstyled align-items-center justify-content-center bottom-0 start-50 end-50 position-absolute">
+                                          <li class="mx-2"><a href="#"><i class="fal fa-heart bg-white rounded-circle p-2"></i></a></li>
+                                          <li class="mx-2"><a href="#"><i class="fal fa-shopping-cart bg-white rounded-circle p-2"></i></a></li>
+                                          <li class="mx-2"><a href="#"><i class="fal fa-search bg-white rounded-circle p-2"></i></a></li>
+                                          </li>
+                                      </ul>
+                                      
+                                      
+                                      </div>
+                                    <p class="pt-4 fw-bold mb-0">Sample Distance Learning Education Goals</p>
+                                    <span class="d-inline-block price py-2 px-0">$ 8.50</span>
+                                    <span class="price-line-through p-0">$ 11.90</span>
+                                    <ul class="rating d-flex flex-row justify-content-start ps-0 ">
+                                      <li><a href="#"><i class='fas fa-star'></i></a></li>
+                                      <li><a href="#"><i class='fas fa-star'></i></a></li>
+                                      <li><a href="#"><i class='fas fa-star'></i></a></li>
+                                      <li><a href="#"><i class='fas fa-star'></i></a></li>
+                                      <li><a href="#"><i class='fal fa-star'></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-sm-12">
+                                <div class="products_list">
+                                    <div class="box position-relative"><img src="images/Book-6.jpg" class="img-fluid" alt="Book-6">
+                                        <ul class="icon-list d-flex flex-row list-unstyled align-items-center justify-content-center bottom-0 start-50 end-50 position-absolute">
+                                          <li class="mx-2"><a href="#"><i class="fal fa-heart bg-white rounded-circle p-2"></i></a></li>
+                                          <li class="mx-2"><a href="#"><i class="fal fa-shopping-cart bg-white rounded-circle p-2"></i></a></li>
+                                          <li class="mx-2"><a href="#"><i class="fal fa-search bg-white rounded-circle p-2"></i></a></li>
+                                          </li>
+                                      </ul>
+                                      
+                                      
+                                      </div>
+                                      <p class="pt-4 fw-bold mb-0">Sample Distance Learning Education Goals</p>
+                                      <span class="d-inline-block price py-2 px-0">$ 8.50</span>
+                                      <span class="price-line-through p-0">$ 11.90</span>
+                                      <ul class="rating d-flex flex-row justify-content-start ps-0 ">
+                                        <li><a href="#"><i class='fas fa-star'></i></a></li>
+                                        <li><a href="#"><i class='fas fa-star'></i></a></li>
+                                        <li><a href="#"><i class='fas fa-star'></i></a></li>
+                                        <li><a href="#"><i class='fas fa-star'></i></a></li>
+                                        <li><a href="#"><i class='fal fa-star'></i></a></li>
+                                      </ul>
+                            
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-sm-12">
+                                <div class="products_list">
+                                    <div class="box position-relative"><span
+                                        class="sale position-absolute top-0 left-100 translate-middle badge btn btn-danger bg-danger">SALE</span>
+                                        <img src="images/Book-7.jpg" class="img-fluid" alt="Book-7">
+                                        <ul class="icon-list d-flex flex-row list-unstyled align-items-center justify-content-center bottom-0 start-50 end-50 position-absolute">
+                                          <li class="mx-2"><a href="#"><i class="fal fa-heart bg-white rounded-circle p-2"></i></a></li>
+                                          <li class="mx-2"><a href="#"><i class="fal fa-shopping-cart bg-white rounded-circle p-2"></i></a></li>
+                                          <li class="mx-2"><a href="#"><i class="fal fa-search bg-white rounded-circle p-2"></i></a></li>
+                                          </li>
+                                      </ul>
+                                      
+                                      
+                                      </div>
+                                    <p class="pt-4 fw-bold mb-0">Sample Distance Learning Education Goals</p>
+                                    <span class="d-inline-block price py-2 px-0">$ 8.50</span>
+                                    <span class="price-line-through p-0">$ 11.90</span>
+                                    <ul class="rating d-flex flex-row justify-content-start ps-0 ">
+                                      <li><a href="#"><i class='fas fa-star'></i></a></li>
+                                      <li><a href="#"><i class='fas fa-star'></i></a></li>
+                                      <li><a href="#"><i class='fas fa-star'></i></a></li>
+                                      <li><a href="#"><i class='fas fa-star'></i></a></li>
+                                      <li><a href="#"><i class='fal fa-star'></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-sm-12">
+                                <div class="products_list">
+                                    <div class="box position-relative"><img src="images/Book-8.jpg" class="img-fluid" alt="Book-8">
+                                        <ul class="icon-list d-flex flex-row list-unstyled align-items-center justify-content-center bottom-0 start-50 end-50 position-absolute">
+                                          <li class="mx-2"><a href="#"><i class="fal fa-heart bg-white rounded-circle p-2"></i></a></li>
+                                          <li class="mx-2"><a href="#"><i class="fal fa-shopping-cart bg-white rounded-circle p-2"></i></a></li>
+                                          <li class="mx-2"><a href="#"><i class="fal fa-search bg-white rounded-circle p-2"></i></a></li>
+                                          </li>
+                                      </ul>
+                                      
+                                      
+                                      </div>
+                                      <p class="pt-4 fw-bold mb-0">Sample Distance Learning Education Goals</p>
+                                      <span class="d-inline-block price py-2 px-0">$ 8.50</span>
+                                      <span class="price-line-through p-0">$ 11.90</span>
+                                      <ul class="rating d-flex flex-row justify-content-start ps-0 ">
+                                        <li><a href="#"><i class='fas fa-star'></i></a></li>
+                                        <li><a href="#"><i class='fas fa-star'></i></a></li>
+                                        <li><a href="#"><i class='fas fa-star'></i></a></li>
+                                        <li><a href="#"><i class='fas fa-star'></i></a></li>
+                                        <li><a href="#"><i class='fal fa-star'></i></a></li>
+                                      </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row my-5 text-center">
+                            <div class="col">
+                                <button type="button" class="btn btn-primary  bg-blue btn-lg px-4  me-md-2 btn-hover text-uppercase view-more">View More</button>
+                            </div>
+                        </div>
+                        <div class="row mt-4">
+                            <div class="col">
+                                <div class="pagination-box">
+                                    <div class="d-flex justify-content-center ">
+                                        <ul class="pagination align-items-center">
+                                          <li class="page-item ">
+                                            <a class="page-link " href="# " aria-label="Previous ">
+                                              <i class="fal fa-chevron-left px-1 "></i>
+                                            </a>
+                                          </li>
+                                          <li class="page-item "><a class="page-link " href="# ">1</a></li>
+                                          <li class="page-item "><a class="page-link " href="# ">2</a></li>
+                                          <li class="page-item "><a class="page-link " href="# ">3</a></li>
+                                          <li class="page-item px-1 ">...</li>
+                                          <li class="page-item "><a class="page-link " href="# ">11</a></li>
+                                          <li class="page-item ">
+                                            <a class="page-link " href="# " aria-label="Next ">
+                                              <i class="fal fa-chevron-right px-1 "></i>
+                                            </a>
+                                          </li>
+                                          <li class="page-item py-1 ">Go to page</li>
+                                          <li class="page-item px-2 "><input type="text " class="form-control border page-box " id="page-no "> </li>
+                                          <li class="page-item py-1 ms-1 "><a class="blue " href="# ">Go</a></li>
+                                        </ul>
+                                       
+                                      </div> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                        <h3 class="tab-title mb-4 mb-md-5">Ratings & Reviews </h3>
+                        <div class="row">
+                            <div class="col">
+                                <div class="rating-list mb-5">
+                                    <div class="profile-title d-md-flex justify-content-between">
+                                        <div class="title-p">
+                                            <h4>Figerative Language Posters</h4>
+                                        </div>
+                                        <div class="date-pro">
+                                            <p><i class="fal fa-calendar me-2"></i> February 5, 2022</p>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex profile-img align-items-center">
+                                        <div class="profile-img me-3">
+                                            <img src="images/profile.png" alt="profile" class="img-fluid">
+                                        </div>
+                                        <div class="text-pro">
+                                            <h6>MissMCreations (TpT Seller)</h6>
+                                            <div class="rating-icon d-flex align-items-center">
+                                                <ul class="rating d-flex flex-row justify-content-start ps-0 me-2 mb-0">
+                                                    <li><a href="#"><i class='fas fa-star'></i></a></li>
+                                                    <li><a href="#"><i class='fas fa-star'></i></a></li>
+                                                    <li><a href="#"><i class='fas fa-star'></i></a></li>
+                                                    <li><a href="#"><i class='fas fa-star'></i></a></li>
+                                                    <li><a href="#"><i class='fal fa-star'></i></a></li>
+                                                </ul>
+                                                <p>4.2 Rating</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="content-p mt-3">
+                                        <p class="green-text">Very satisfied</p>
+                                        <div class="description">
+                                            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration.</p>
+                                        </div>
+                                        <div class="d-md-flex replay-box align-items-center justify-content-between">
+                                            <div class="grade">
+                                                <p class="m-0"><span class="me-2">Student Used With</span> <b>4th Grade</b></p>
+                                            </div>
+                                            <div class="replay my-2 my-md-0">
+                                                <a href="#">View Reply</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="rating-list mb-3">
+                                    <div class="profile-title d-md-flex justify-content-between">
+                                        <div class="title-p">
+                                            <h4>Figerative Language Posters</h4>
+                                        </div>
+                                        <div class="date-pro">
+                                            <p><i class="fal fa-calendar me-2"></i> February 5, 2022</p>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex profile-img align-items-center">
+                                        <div class="profile-img me-3">
+                                            <img src="images/profile.png" alt="profile" class="img-fluid">
+                                        </div>
+                                        <div class="text-pro">
+                                            <h6>MissMCreations (TpT Seller)</h6>
+                                            <div class="rating-icon d-flex align-items-center">
+                                                <ul class="rating d-flex flex-row justify-content-start ps-0 me-2 mb-0">
+                                                    <li><a href="#"><i class='fas fa-star'></i></a></li>
+                                                    <li><a href="#"><i class='fas fa-star'></i></a></li>
+                                                    <li><a href="#"><i class='fas fa-star'></i></a></li>
+                                                    <li><a href="#"><i class='fas fa-star'></i></a></li>
+                                                    <li><a href="#"><i class='fal fa-star'></i></a></li>
+                                                </ul>
+                                                <p>4.2 Rating</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="content-p mt-3">
+                                        <p class="green-text">Very satisfied</p>
+                                        <div class="description">
+                                            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration.</p>
+                                        </div>
+                                        <div class="d-md-flex replay-box align-items-center justify-content-between">
+                                            <div class="grade">
+                                                <p class="m-0"><span class="me-2">Student Used With</span> <b>4th Grade</b></p>
+                                            </div>
+                                            <div class="replay my-2 my-md-0">
+                                                <a href="#">View Reply</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row my-5 text-center">
+                            <div class="col">
+                                <button type="button" class="btn btn-primary bg-blue btn-lg px-5 py-2 py-md-3 btn-hover text-uppercase">View More</button>
+                            </div>
+                        </div>
+                        <div class="row mt-4">
+                            <div class="col">
+                                <div class="pagination-box">
+                                    <div class="d-flex justify-content-center ">
+                                        <ul class="pagination align-items-center">
+                                          <li class="page-item ">
+                                            <a class="page-link " href="# " aria-label="Previous ">
+                                              <i class="fal fa-chevron-left px-1 "></i>
+                                            </a>
+                                          </li>
+                                          <li class="page-item "><a class="page-link " href="# ">1</a></li>
+                                          <li class="page-item "><a class="page-link " href="# ">2</a></li>
+                                          <li class="page-item "><a class="page-link " href="# ">3</a></li>
+                                          <li class="page-item px-1 ">...</li>
+                                          <li class="page-item "><a class="page-link " href="# ">11</a></li>
+                                          <li class="page-item ">
+                                            <a class="page-link " href="# " aria-label="Next ">
+                                              <i class="fal fa-chevron-right px-1 "></i>
+                                            </a>
+                                          </li>
+                                          <li class="page-item py-1 ">Go to page</li>
+                                          <li class="page-item px-2 "><input type="text " class="form-control border page-box " id="page-no "> </li>
+                                          <li class="page-item py-1 ms-1 "><a class="blue " href="# ">Go</a></li>
+                                        </ul>
+                                       
+                                      </div> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+                        <h3 class="tab-title mb-4 mb-md-5">Profile </h3>
+                        <div class="profile-logo mb-5">
+                            <img src="images/profile-logo.png" alt="profile logo">
+                        </div>
+                        <div class="row mb-3 ">
+                            <div class="col-md-2 col-12">
+                               <div class="labels">
+                                   <p>About Me:</p>
+                               </div>
+                            </div>
+                            <div class="col-md-10 col-12">
+                                <div class="profile-txt">
+                                    <p>Seller to add information here about themselves including <br>
+                                        teaching experience, grades taught etc.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-2 col-12">
+                               <div class="labels">
+                                   <p>Additional Info:</p>
+                               </div>
+                            </div>
+                            <div class="col-md-10 col-12">
+                                <div class="profile-txt">
+                                    <p>Seller can add information here about themselves including <br>
+                                        teaching experience, grades taught etc. </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="Communication" role="tabpanel" aria-labelledby="Communication-tab">
+                        <h3 class="tab-title mb-3 mb-md-4">'Looking for Resource' up </h3>
+                        <div class="my-4 mb-5">
+                            <button type="button" class="btn btn-primary bg-blue btn-lg px-4 btn-hover text-uppercase"> Contact Seller</button>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <div class="rating-list mb-5">
+                                    <div class="profile-title d-md-flex justify-content-between">
+                                        <div class="title-p">
+                                            <h4>LOOKING FOR A RESOURCE</h4>
+                                        </div>
+                                        <div class="date-pro">
+                                            <p><i class="fal fa-calendar me-2"></i> February 5, 2022</p>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="d-flex profile-img align-items-md-top align-items-start">
+                                        <div class="profile-img me-3">
+                                            <img src="images/profile.png" alt="profile" class="img-fluid">
+                                        </div>
+                                        <div class="text-pro com-text">
+                                            <h6><b>Kathy Smith</b></h6>
+                                            <div class="description d-none d-md-block ">
+                                                <p>I purchase a resource from you last year and have since lost the document. Could you advise as to how I go about <br>
+                                                    getting another copy? <br>
+                                                    Thank you for your help</p>
+                                            </div>
+                                           
+                                        </div>
+                                    </div>
+                                    <div class="content-p mt-3">
+                                        <div class="description d-md-none d-block mb-5">
+                                            <p>I purchase a resource from you last year and have since lost the document. Could you advise as to how I go about <br>
+                                                getting another copy? <br>
+                                                Thank you for your help</p>
+                                        </div>
+                                        <div class="d-flex replay-box align-items-center justify-content-center justify-content-md-end">
+                                            <!-- <div class="grade">
+                                                <p class="m-0"><span class="me-2">Student Used With</span> <b>4th Grade</b></p>
+                                            </div> -->
+                                            <div class="replay me-3">
+                                                <a href="#">View Reply</a>
+                                            </div>
+                                            <div class="view-replay">
+                                                <a href="#"><i class="fas fa-reply me-1"></i> Reply</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="rating-list mb-5">
+                                    <div class="profile-title d-md-flex justify-content-between">
+                                        <div class="title-p">
+                                            <h4>LOOKING FOR A RESOURCE</h4>
+                                        </div>
+                                        <div class="date-pro">
+                                            <p><i class="fal fa-calendar me-2"></i> February 5, 2022</p>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="d-flex profile-img align-items-md-top align-items-start">
+                                        <div class="profile-img me-3" >
+                                            <img src="images/profile.png" alt="profile" class="img-fluid">
+                                        </div>
+                                        <div class="text-pro com-text">
+                                            <h6><b>Kathy Smith</b></h6>
+                                            <div class="description d-none d-md-block">
+                                                <p>I purchase a resource from you last year and have since lost the document. Could you advise as to how I go about <br>
+                                                    getting another copy? <br>
+                                                    Thank you for your help</p>
+                                            </div>
+                                           
+                                        </div>
+                                    </div>
+                                    <div class="content-p mt-3">
+                                        <div class="description d-md-none d-block mb-5">
+                                            <p>I purchase a resource from you last year and have since lost the document. Could you advise as to how I go about <br>
+                                                getting another copy? <br>
+                                                Thank you for your help</p>
+                                        </div>
+                                        <div class="d-flex replay-box align-items-center justify-content-center justify-content-md-end">
+                                            <!-- <div class="grade">
+                                                <p class="m-0"><span class="me-2">Student Used With</span> <b>4th Grade</b></p>
+                                            </div> -->
+                                            <div class="replay me-3">
+                                                <a href="#">View Reply</a>
+                                            </div>
+                                            <div class="view-replay">
+                                                <a href="#"><i class="fas fa-reply me-1"></i> Reply</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+            </div>
+        </div>
+        
+    </div>
+</section>
+<!-- book bin products section end  -->
+    <!--Footer Section Starts Here-->
+
+    <section class="footer-section">
+        <div class="container">
+            <footer class="row row-cols-5 py-5 my-5">
+                <div class="col-12 col-sm-12 col-md-4 pb-3">
+                    <a href="index.html" class="d-flex align-items-center">
+                        <img src="images/footer-logo.png" class="img-fluid mr-3" alt="Classroom-footer-logo">
+                    </a>
+                </div>
+
+
+
+                <div class="col-12 col-sm-12 col-md-2 pb-3">
+                    <h5 class="border-start ps-4">About Us</h5>
+                    <ul class="nav flex-column footer-links ms-4 mt-3">
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-dark">Who We Are</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-dark">Blog</a></li>
+
+                    </ul>
+                </div>
+
+                <div class="col-12 col-sm-12 col-md-3 pb-3">
+                    <h5 class="border-start ps-4">Support</h5>
+                    <ul class="nav flex-column footer-links ms-4 mt-3">
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-dark">Help and FAQ</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-dark">Documents and Policies</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-dark">Forms</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-dark">Contact Us</a></li>
+
+                    </ul>
+                </div>
+
+                <div class="col-12 col-sm-12 col-md-3">
+                    <h5 class="border-start ps-4">Keep in Touch</h5>
+                    <ul class="nav flex-column mt-3">
+                        <li class="nav-item mb-2">
+                            <p>Sign up to get free resources, updates and special offers.</p>
+                        </li>
+                        <li class="nav-item mb-2 "><a href="#" class="nav-link p-0 text-dark"><button type="button"
+                  class="btn-hover btn btn-primary sign-up bg-blue btn-lg px-4 my-2 me-md-2 text-uppercase">Sign up
+                  now</button></a>
+                        </li>
+
+                    </ul>
+                </div>
+
+            </footer>
+        </div>
+        <div class="bg-dark text-center">
+            <p class=" text-white py-3 mb-0">&copy; 2022 - Classroom Copy. All rights reserved.</p>
+        </div>
+    </section>
+
+    <!--Footer Section Ends Here-->
+    <button type="button" class="btn bg-blue btn-floating btn-lg topbtn" id="toTopBtn">
+      <i class="fas fa-arrow-up text-white"></i>
+    </button>
+
+
+    <!-- Separate Popper and Bootstrap JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    
+    <script>
+    $('.rating-reviews').click(function(){
+    $('#rate-review-sorting').show();
+    $('#product-sort').hide();
+   
+});
+
+
+$('.product').click(function(){
+   $('#rate-review-sorting').hide();
+    $('#product-sort').show();
+});
+
+$('.profile').click(function(){
+   $('#rate-review-sorting').hide();
+    $('#product-sort').show();
+});
+
+
+$('.communication').click(function(){
+   $('#rate-review-sorting').hide();
+    $('#product-sort').show();
+});
+
+
+</script>
+
+</body>
+
+</html>
